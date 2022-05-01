@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://skrzypek-na-dachu.netlify.app/sitemap.xml
-Host: https://skrzypek-na-dachu.netlify.app
+Sitemap: https://edyp.netlify.app/sitemap.xml
+Host: https://edyp.netlify.app
 
