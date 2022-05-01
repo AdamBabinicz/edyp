@@ -22,7 +22,7 @@ const Header = () => {
             <FaHeadSideMask />
           </div>
           <nav>
-            <ul className={active}>
+            <ul className={active} onClick={navToggle}>
               <li>
                 <a href="/">Start</a>
               </li>

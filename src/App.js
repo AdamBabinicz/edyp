@@ -12,10 +12,12 @@ import Blog from "./components/Blog";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
 import CookieConsent from "react-cookie-consent";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Home />
       <About />
