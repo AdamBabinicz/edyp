@@ -20,7 +20,7 @@ const Portfolio = () => {
               <span className="baget">
                 ur. ok. 496 p.n.e. w Kolonos, zm. 406 p.n.e. w Atenach
               </span>
-              <h2 className="title">Sofokles i jego dzieło</h2>
+              <h2 className="title">Sofokles i jego utwór</h2>
             </div>
             <div className="links">
               <ul className="flexSB">
