@@ -1,38 +1,602 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Bungee+Outline&family=Butcherman&family=Eagle+Lake&family=MedievalSharp&family=Reggae+One&family=Rubik+Glitch&family=Stick&family=Train+One&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* font-family: 'Barrio', cursive;
+font-family: 'Bungee Outline', cursive;
+font-family: 'Butcherman', cursive;
+font-family: 'Eagle Lake', cursive;
+font-family: 'MedievalSharp', cursive;
+font-family: 'Reggae One', cursive;
+font-family: 'Rubik Glitch', cursive;
+font-family: 'Stick', sans-serif;
+font-family: 'Train One', cursive; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Tahoma", sans-serif;
+  background: #f8f8f8;
+  overflow-x: hidden;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+.headerContainer {
+  max-width: 90%;
+  margin: auto;
+}
+.flexSB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo svg {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  color: #767676;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.outline-btn {
+  background: #767676;
+  border: 2px solid #767676;
+  padding: 14px 40px;
+  transition: 0.5s;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}
+.outline-btn:hover {
+  background: transparent;
+  color: #767676;
+  border: 2px solid #767676;
+}
+header {
+  height: 10vh;
+  line-height: 10vh;
+  background: #fff;
+  box-shadow: 0px 7px 2px -3px rgba(89, 89, 89, 0.02);
+}
+header a {
+  color: #767676;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_toggler {
+  font-size: 20px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav_toggler {
+    display: block;
+  }
+  .nav_menu {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: 100vh;
+    padding: 50px;
+    width: 100%;
+    flex-direction: column;
+    background: #767676;
+    transform: translateX(100%);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  header a {
+    color: #fff;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_active {
+  transform: translateX(0);
+}
+.home {
+  height: 90vh;
+  position: relative;
+}
+.home h1 {
+  font-size: 100px;
+  margin-top: 45%;
+  color: #767676;
+  font-family: "Reggae One", cursive;
+}
+.home h1 span {
+  color: #fff;
+  -webkit-text-stroke: 1px #767676;
+}
+.home h3 {
+  font-size: 20px;
+  color: #767676;
+  font-weight: 600;
+  font-family: "Train One", cursive;
+}
+.home img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(28% 0, 100% 0, 100% 50%, 100% 100%, 26% 100%, 0% 50%);
+  background: #767676;
+}
+.flex {
+  display: flex;
+}
+.mtop {
+  margin-top: 80px;
+}
+.baget {
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.primary-btn {
+  padding: 20px 60px;
+  background: #767676;
+  color: #fff;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.primary-btn:hover {
+  background: transparent;
+  color: #767676;
+  border: 2px solid #767676;
+}
+.about {
+  background: #fff;
+  padding: 100px 0;
+}
+.about .left {
+  display: flex;
+}
+.about .left img {
+  height: auto;
+  object-fit: contain;
+}
+.about .right {
+  padding: 70px 80px;
+}
+.about h2 {
+  font-size: 40px;
+  margin: 20px 0;
+  font-family: "Reggae One", cursive;
+}
+.about p {
+  margin: 20px 0;
+}
+p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767676;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.portfolio {
+  position: relative;
+}
+.title {
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Reggae One", cursive;
+}
+.portfolio li {
+  margin-left: 30px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.portfolio li.active,
+.portfolio li:hover {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+}
+.portfolio img {
+  width: 20rem;
+  max-width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.portfolio .box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.portfolio .overlay {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: left;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+}
+.portfolio .overlay h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.portfolio .box:hover .overlay {
+  opacity: 1;
+}
+.skill {
+  padding: 7% 0;
+  background: #fff;
+}
+.skill .left {
+  padding-right: 50px;
+}
+.skill .left .title {
+  margin-bottom: 2rem;
+}
+.row {
+  width: 50%;
+}
+.progress {
+  background: #d5d5d5;
+  border-radius: 20px;
+  position: relative;
+  margin: 80px 0;
+  height: 5px;
+  width: 90%;
+}
+.progress h4 {
+  position: absolute;
+  color: #767676;
+  top: -40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.progress h4:nth-child(2) {
+  right: 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+.progress-done {
+  background: #000;
+  border-radius: 20px;
+  color: #fff;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  margin-top: 1rem;
+}
+.right svg {
+  font-size: 2rem;
+}
+.wrapper {
+  background: url("../public/assets/15.png") center/contain no-repeat fixed;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper .container {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.wrapper .container svg {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  color: #767676;
+  font-size: 40px;
+  line-height: 100px;
+  background: transparent;
+}
+.wrapper h3 {
+  font-size: 50px;
+  margin: 20px 0;
+  color: #767676;
+  font-family: "Reggae One", cursive;
+}
+.wrapper .outline-btn {
+  /* font-size: 20px;
+  font-weight: 500;
+  padding: 20px 60px;
+  border: 2px solid #fff;
+  background: #fff;
+  color: #767676; */
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.branding {
+  padding: 50px 0;
+  background: #fff;
+}
+.branding .box {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.branding img {
+  transition: 0.5s;
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+}
+.branding img:hover {
+  opacity: 0.6;
+}
+.testimonials {
+  padding: 80px 0;
+}
+.testimonials h3 {
+  font-size: 35px;
+  margin-top: 30px;
+  font-family: "Reggae One", cursive;
+}
+.testimonials .left {
+  padding-right: 100px;
+}
+.details {
+  margin-top: 50px;
+}
+.details img {
+  width: 100%;
+  height: 280px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+.details .name {
+  margin: 10px 40px;
+}
+.details p {
+  margin: 0;
+}
+.blog {
+  background: #fff;
+  padding: 100px 0;
+}
+.blog h3 {
+  margin-bottom: 20px;
+}
+.blog .content span {
+  color: #767676;
+  font-style: italic;
+}
+.blog img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.work {
+  padding: 100px 0;
+  background: url("/public/assets/55.jpg") center/cover no-repeat fixed;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+.work::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background: url("/public/assets/4.svg") center/cover no-repeat fixed;
+  width: 100%;
+  height: 10vh;
+  transform: rotate(-180deg);
+}
+.work::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+}
+.work .container {
+  position: relative;
+  z-index: 9;
+}
+.work h3 {
+  font-family: "Reggae One", cursive;
+  font-size: 80px;
+  color: #fff;
+  margin-top: 13%;
+}
+.work button {
+  background: #fff;
+  color: #767676;
+  border: 2px solid #fff;
+  margin-top: 40px;
+}
+.work button:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+footer {
+  padding: 50px 0;
+  background: #000;
+}
+footer p {
+  color: #fff;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .home {
+    height: 50vh;
   }
-  to {
-    transform: rotate(360deg);
+  .home h1 {
+    font-size: 50px;
+    margin-top: 60%;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about .row {
+    width: 100%;
+  }
+  .about .flex {
+    flex-direction: column;
+  }
+  .about .left img {
+    margin-top: -10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about .right {
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .about .right .baget {
+    font-size: 15px;
+  }
+  .about h2 {
+    font-size: 25px;
+  }
+  .portfolio {
+    padding: 0;
+  }
+  .portfolio .head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .portfolio .left {
+  }
+  .head .flexSB {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flexSB li {
+    margin: 0.5rem 1rem;
+    width: max-content;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .skill .flexSB {
+    flex-direction: column;
+  }
+  .skill .left {
+    width: 100%;
+    padding: 0;
+  }
+  .skill .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .progress {
+    margin: 50px 0;
+    position: relative;
+    background: transparent;
+  }
+  .progress-done {
+  }
+  .wrapper {
+    background: url("../public/assets/15.png") center/auto no-repeat;
+  }
+  .wrapper .container {
+  }
+  .grid2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .branding img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .testimonials .container {
+    width: 100%;
+  }
+  .testimonials .flexSB {
+    flex-direction: column;
+  }
+  .testimonials h3 {
+    margin-bottom: 2rem;
+  }
+  .testimonials .left {
+    padding: 0;
+  }
+  .testimonials .row {
+    width: 100%;
+  }
+  .details {
+    flex-direction: column;
+  }
+  .name h3 {
+    font-size: 20px;
+  }
+  .work {
+    background: url("/public/assets/55.jpg") center/cover no-repeat;
+    height: 60vh;
+  }
+  .work::after {
+    display: none;
+  }
+  .work::before {
+    display: none;
+  }
+  .work .container {
+    position: relative;
+    z-index: 9;
+  }
+  .work h3 {
+    font-size: 40px;
+  }
+  .work button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    margin-top: 40px;
+  }
+  .work button:hover {
+    color: #fff;
+    border: 2px solid #fff;
   }
 }

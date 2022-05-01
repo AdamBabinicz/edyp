@@ -1,43 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/assets/28.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      name="DESCRIPTION"
+      content="Lecz sam ci powiem, tobie, który szydzisz
+      z mojej ślepoty, patrzysz, a nie widzisz nędzy twej, nie wiesz, z kim ci życie schodzi, gdzie zamieszkałeś i kto ciebie rodzi."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="Obecność ironii tragicznej w życiu Edypa ma uprzytomnić widzom (oczyścić ich z niewiedzy), że ponad człowiekiem są siły, które o nim decydują."
+      content="index, follow"
+    />
+    <meta name="handheldFriendly" content="true" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Na pytanie, za co cierpi Edyp, nie ma odpowiedzi – i o to właśnie idzie, że odpowiedzi być nie może, gdyż, zdaniem Sofoklesa, przekracza ona możliwości ludzkie."
+    />
+    <meta property="og:url" content="https://skrzypek-na-dachu.netlify.app" />
+    <meta
+      property="og:image"
+      content="https://skrzypek-na-dachu.netlify.app/assets/6.png"
+    />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="1200" />
+    <meta
+      property="business:contact_data:street_address"
+      content="Jednym z podstawowych elementów grozy tragicznej, jaką przejmuje nas dzieło Sofoklesa, jest to, że Edyp sam, wysiłkiem własnej woli i własnego umysłu sprowadza wykrycie tajemnicy swego losu, które strąca go w otchłań."
+    />
+    <meta
+      property="business:contact_data:locality"
+      content="W Teatrze TV „Król Edyp” realizowany był dotąd czterokrotnie: w 1967 roku przez Jerzego Gruzę (z Gustawem Holoubkiem w roli Edypa); w 1975 – przez Lidię Zamkow (z Leszkiem Herdegenem); w 1992 – Laco Adamika (Jan Frycz jako Edyp) i w 2005 roku przez Gustawa Holoubka (z Piotrem Fronczewskim w roli tytułowej)."
+    />
+    <meta
+      property="business:contact_data:region"
+      content="Okazuje się, że Edyp zabił swojego ojca, Lajosa, myśląc, że to obcy wędrowiec. Potem przybył do Teb i ożenił się z własną matką. Po poznaniu prawdy bohater oślepia się i opuszcza Teby, Jokasta popełnia samobójstwo. Ojcu towarzyszą na wygnanie jego córki: Antygona i Ismena."
+    />
+    <meta property="business:contact_data:postal_code" content="61000–61499" />
+    <meta
+      property="business:contact_data:country_name"
+      content="Akcja tragedii rozgrywa się w czasach mitycznych, w Tebach, gdzie panuje Edyp. Zgodnie z regułami tragedii antycznej zachowane zostały jedność czasu i miejsca akcji: wydarzenia trwają dobę i rozgrywają się przed pałacem królewskim w Tebach."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:site"
+      content="https://twitter.com/ROMUALDDOBRYDN4/status/869901088920657921"
+    />
+    <meta
+      name="twitter:title"
+      content="Edyp - kiedy przybył do Teb, uwolnił miasto od siejącego spustoszenie Sfinksa. Tylko on jeden potrafił rozwiązać zagadkę, jaką potwór zadawał ludziom. Pokonany Sfinks rzucił się ze skały w przepaść, a Edyp otrzymał tron po Lajosie i poślubił wdowę po zmarłym królu, Jokastę."
+    />
+    <meta
+      name="twitter:description"
+      content="Z ich związku urodziło się czworo dzieci: dwóch synów - Polinejkes i Eteokles oraz dwie córki - Antygona i Ismena. Edyp jest mądrym i rozsądnym władcą, kochanym przez lud, jednak po kilku latach szczęśliwego panowania na miasto spadają nieszczęścia."
+    />
+    <meta
+      name="twitter:image"
+      content="https://skrzypek-na-dachu.netlify.app/assets/2.jfif"
+    />
+    <meta name="twitter:image:alt" content="" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/26.png" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Król Edyp</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="modal"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "VideoObject",
+        "name": "Jak wszystkie tragedie ta również miała służyć przeżyciu katharsis - oczyszczeniu wewnętrznemu, które miał przeżyć widz antycznego spektaklu.",
+        "contentUrl": "https://pl-pl.facebook.com/pages/category/Community/Skrzypek-na-dachu-421439487923855",
+        "duration": "PT00H04M33S",
+        "thumbnailUrl": "https://skrzypek-na-dachu.netlify.app/assets/9.jpg",
+        "uploadDate": "2022-05-01",
+        "description": "W konstrukcji głównego bohatera wyraźnie zarysowany jest tragizm postaci, jego losy są zdeterminowane, a czyny konsekwentnie prowadzą do katastrofy."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "url": "https://skrzypek-na-dachu.netlify.app"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Teatr, a z nim dramat, rozwinął się w Atenach, w VI w. p.n.e. Wyrósł on z pieśni obrzędowych ku czci Dionizosa, boga wina, urodzaju i odradzającej się przyrody.",
+        "url": "https://skrzypek-na-dachu.netlify.app",
+        "sameAs": [
+          "https://pl-pl.facebook.com/pages/category/Community/Skrzypek-na-dachu-421439487923855",
+          "https://twitter.com/ROMUALDDOBRYDN4/status/869901088920657921",
+          "https://pl.wikipedia.org/wiki/Skrzypek_na_dachu",
+          "https://www.youtube.com/watch?v=q-1k9oYCB9c",
+          "https://pl.pinterest.com/pin/382102349616669092"
+        ]
+      }
+    </script>
   </body>
 </html>
