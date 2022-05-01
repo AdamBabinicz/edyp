@@ -9,7 +9,7 @@ const About = () => {
     {
       id: 1,
       cover: "./assets/8.png",
-      title: "Król Edyp (Oιδίπoυς τύραννoς)",
+      title: "Król Edyp",
       category: "Tragedia",
       desc: "Tragedia grecka napisana ok. 427 p.n.e. przez Sofoklesa. Obok innych dwóch sztuk Sofoklesa – Edypa w Kolonie i Antygony należy do tak zwanego cyklu Tebańskiego. Tragedia przedstawia bezsilność wobec nieodgadnionych praw losu. Ukazuje historię Edypa, człowieka próbującego oszukać przeznaczenie, chcącego żyć spokojnie, w zgodzie ze światem. Nad Edypem ciąży klątwa, od której nie da się uwolnić. Kazirodztwo i ojcobójstwo są niewybaczalnymi przewinieniami. Piętno pozostaje także na dzieciach (rodzeństwie) Edypa. Sofoklesa do napisania sztuki zainspirowały ówczesne wydarzenia polityczne, a zwłaszcza straszliwa zaraza, jaka dotknęła Ateny na początku wojny peloponeskiej. Prototypem postaci Edypa mógł być Perykles, wielki przywódca Aten należący jednak do rodu Alkmeonidów, który był przeklęty za dopuszczenie się tzw. „Zmazy kylońskiej”.",
     },
@@ -42,7 +42,7 @@ const About = () => {
                     tragedii: Ajas, Antygona (wyst. ok. 441 r. p.n.e.), Król
                     Edyp, Trachinki (429 r. p.n.e.), Elektra (powst. ok. 418-410
                     r. p.n.e.), Filoktet (409 r. p.n.e.), Edyp w Kolonos (wyst.
-                    401 r. p.n.e. - już po śmierci autora).
+                    401 r. p.n.e.).
                   </p>
                   <br />
                   <p>
