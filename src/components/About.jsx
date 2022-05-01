@@ -39,17 +39,14 @@ const About = () => {
                     zwyciężał w konkursach na najlepszą tragedię. Pierwsze
                     zwycięstwo odniósł w 468 r. p.n.e. rywalizując z
                     Ajschylosem. Do naszych czasów zachowało się zaledwie 7
-                    tragedii: Ajas (prawdopodobnie najwcześniejsza), Antygona
-                    (wyst. ok. 441 r. p.n.e.), Król Edyp, Trachinki (429 r.
-                    p.n.e.), Elektra (powst. ok. 418-410 r. p.n.e.), Filoktet
-                    (409 r. p.n.e.), Edyp w Kolonos (wyst. 401 r. p.n.e. - już
-                    po śmierci autora).
+                    tragedii: Ajas, Antygona (wyst. ok. 441 r. p.n.e.), Król
+                    Edyp, Trachinki (429 r. p.n.e.), Elektra (powst. ok. 418-410
+                    r. p.n.e.), Filoktet (409 r. p.n.e.), Edyp w Kolonos (wyst.
+                    401 r. p.n.e. - już po śmierci autora).
                   </p>
                   <br />
                   <p>
-                    <em>
-                      www.bryk.pl/lektury/sofokles/krol-edyp.biografia-autora
-                    </em>
+                    <em>www.bryk.pl/lektury/sofokles</em>
                   </p>
                 </Modal>
               </>

@@ -21,16 +21,11 @@ const Work = () => {
             momencie narodzin - musi on podjąć los, który przypadł mu w udziale.
             Ma do dyspozycji tylko cząstkę czasu i cząstkę wiedzy - jest
             śmiertelny, jego działania są kalekie, niepełne, ciąży nad nim
-            przypadek, przymus, konieczność. Naprawdę tragedia występuje tam,
-            gdzie w sieć losu zostaje uwikłana jednostka wybitna, dumna,
-            niepodległa, pragnąca rzucić wyzwanie przeznaczeniu (jest tak w
-            wypadku Antygony, Kreona, Edypa).
+            przypadek, przymus, konieczność.
           </p>
           <br />
           <p>
-            <em>
-              www.bryk.pl/lektury/sofokles/krol-edyp.narodziny-teatru-i-dramatu-greckiego
-            </em>
+            <em>www.bryk.pl/lektury/sofokles</em>
           </p>
         </Modal>
       </section>
